@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(#80cd8ed8, #45b449b1);
+}
+
+main {
+  flex-grow: 1;
+  font-family: "Open Sans", pydaungsu, sans-serif;
+  color: green;
+  min-height: 100vh;
+}
+footer {
+  background-color: rgb(16, 60, 31);
+  color: rgb(142, 217, 104);
+  padding-bottom: 1rem;
+}
+.error {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error h1 {
+  font-size: clamp(0.9rem, 0.611rem + 1.544vw, 2rem);
+}
+
+p {
+  line-height: 180%;
+}

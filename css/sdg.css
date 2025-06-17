@@ -1,0 +1,86 @@
+.sdg {
+  padding: 3rem 0.2rem 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.sdg .sdg-head {
+  font-size: clamp(1.2rem, 0.937rem + 1.404vw, 2.2rem);
+}
+.sdg .sdg-p {
+  font-size: clamp(0.8rem, 0.747rem + 0.281vw, 1rem);
+}
+.sdg .sdg-intro {
+  font-size: 0.7rem;
+}
+.sdg-goals-title {
+  width: 100%;
+  height: auto;
+}
+.sdg-goals-title .sdg-goals-title-head {
+  font-size: 2.2rem;
+}
+.sdg-goals {
+  padding: 4rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.sdg-goals .sdg-goals-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border: 1px solid green;
+  border-radius: 1rem;
+}
+.sdg-goals .sdg-goals-cards .sdg-goals-card {
+  width: 250px;
+  height: 250px;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.sdg-goals .sdg-goals-cards .sdg-goals-card:hover {
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.404);
+  border: 1px solid green;
+}
+.sdg-goals .sdg-goals-cards .sdg-goals-card .sdg-goals-card-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.sdg-aims {
+  padding: 6rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.sdg-aims-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+.card {
+  padding: 2rem;
+  background-color: yellowgreen;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 250px;
+}
+.card:hover {
+  border: 1px solid green;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+}
+.sdg-aims-title {
+  font-size: clamp(1.2rem, 0.937rem + 1.404vw, 2.2rem);
+}

@@ -1,0 +1,42 @@
+.footer-contents {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5% 12%;
+  align-items: center;
+  background-color: rgb(16, 60, 31);
+  color: rgb(142, 217, 104);
+}
+
+footer img {
+  max-width: 3rem;
+  height: auto;
+}
+
+.itlogo ul li {
+  list-style: none;
+  text-align: center;
+  font-size: clamp(0.5rem, 0.019rem + 2.051vw, 1.25rem);
+}
+.footer-links {
+  font-size: clamp(0.5rem, 0.34rem + 0.684vw, 0.75rem);
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+.footer-links ul li {
+  text-align: left;
+  padding: 0.4rem;
+  list-style: none;
+}
+.footer-links ul li a {
+  text-decoration: none;
+  color: rgb(142, 217, 104);
+}
+.copy-right {
+  font-size: clamp(0.5rem, 0.34rem + 0.684vw, 0.75rem);
+  margin: 0.5%;
+  text-align: center;
+}

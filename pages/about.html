@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/Green TVET Title log.png" />
+    <title>About Page</title>
+    <!-- Css Links -->
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+    <link rel="stylesheet" href="../css/profile.css" />
+
+    <!-- Scripts -->
+    <script src="../scripts/button.js" defer></script>
+    <script src="../scripts/translate.js" defer></script>
+    <script src="../scripts/profile.js" defer></script>
+
+    <!-- Google fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="../index.html">
+          <img
+            class="logoimg"
+            src="../images/Green TVET Title log.png"
+            alt="GreenTVET"
+          />
+        </a>
+      </div>
+      <!-- Mobile Sidebar -->
+      <ul class="sidebar">
+        <li onclick="hideMenu()">
+          <a class="nav-links">
+            <img
+              src="../assets/cancel_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+              alt="Close"
+            />
+          </a>
+        </li>
+        <li><a class="nav-links" href="../index.html">Home</a></li>
+        <li class="campaign">
+          <a class="nav-links cam-choose" href="#">
+            Campaign <i class="fa-solid fa-caret-down"></i>
+          </a>
+          <ul class="cam-dropdown">
+            <li><a href="../pages/weekend.html">Weekend Action</a></li>
+            <li><a href="../pages/it.html">IT</a></li>
+            <li><a href="../pages/civil.html">Civil</a></li>
+            <li><a href="../pages/mech.html">Mechanical</a></li>
+            <li><a href="../pages/ec.html">Electronics</a></li>
+            <li><a href="../pages/ep.html">Electrical</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-links" href="../pages/about.html">About</a></li>
+        <li><a class="nav-links" href="../pages/contact.html">Contact</a></li>
+        <!-- Language -->
+        <li class="dropdown">
+          <a href="#" class="nav-links lang-option">
+            Language <i class="fa-solid fa-language"></i>
+          </a>
+          <ul class="lang-dropdown">
+            <li>
+              <a href="#" class="lang-link" data-lang="en">English</a>
+            </li>
+            <li>
+              <a href="#" class="lang-link" data-lang="my">မြန်မာ</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="desktop">
+        <li><a class="nav-links" href="../index.html">Home</a></li>
+        <li class="campaign">
+          <a class="nav-links cam-choose" href="#">
+            Campaign <i class="fa-solid fa-caret-down"></i>
+          </a>
+          <ul class="cam-dropdown">
+            <li><a href="../pages/weekend.html">Weekend Action</a></li>
+            <li><a href="../pages/it.html">IT</a></li>
+            <li><a href="../pages/civil.html">Civil</a></li>
+            <li><a href="../pages/mech.html">Mechanical</a></li>
+            <li><a href="../pages/ec.html">Electronics</a></li>
+            <li><a href="../pages/ep.html">Electrical</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-links" href="../pages/about.html">About</a></li>
+        <li><a class="nav-links" href="../pages/contact.html">Contact</a></li>
+        <!-- Language -->
+        <li class="dropdown">
+          <a href="#" class="nav-links lang-option"
+            >Language <i class="fa-solid fa-language"></i>
+          </a>
+          <ul class="lang-dropdown">
+            <li>
+              <a href="#" class="lang-link" data-lang="en">English</a>
+            </li>
+            <li><a href="#" class="lang-link" data-lang="my">မြန်မာ</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="menu" onclick="showMenu()">
+        <a href="#">
+          <img
+            class="menu-button"
+            src="../assets/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+            alt="Menu"
+          />
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="about-container">
+        <div class="slider-wrapper">
+          <div class="slider">
+            <div id="slide-1">
+              <h2 data-translate="abouth" class="heading">
+                About This Project
+              </h2>
+              <p data-translate="aboutp1" class="description">
+                We created this page to teach students about Green TVET
+              </p>
+              <p data-translate="aboutp2" class="description">
+                Because everyone should know how vocational education is
+                building a greener future!
+              </p>
+            </div>
+            <div id="slide-2">
+              <h2 data-translate="greenh" class="heading">
+                Why Green Skills Matter
+              </h2>
+              <p data-translate="greenp1" class="description">
+                We believe that understanding green skills is crucial for the
+                future,
+              </p>
+              <p data-translate="greenp2" class="description">
+                both for the environment and for exciting career opportunities.
+              </p>
+            </div>
+            <div id="slide-3">
+              <h2 data-translate="subh" class="heading">
+                Our Green TVET Journey
+              </h2>
+              <p data-translate="subp" class="description">
+                This blog was created as part of our Web Design class activities
+                on campus.
+              </p>
+            </div>
+          </div>
+          <div class="slide-nav">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="meetTeam">
+        <div class="team-text">
+          <h2 class="meethead" data-translate="teamh">Meet Our Team</h2>
+          <p class="meetdes" data-translate="teamp">
+            We're the students from Myingyan G.T.I (IT) who built this blog!
+          </p>
+        </div>
+        <div class="wrapper">
+          <i id="left" class="fa-solid fa-angle-left arrow"></i>
+          <ul class="carousel">
+            <!--Person1-->
+            <li class="card">
+              <div class="img">
+                <img
+                  src="../profiles/ylh.png"
+                  alt="Card profiles"
+                  draggable="false"
+                />
+              </div>
+              <h2 class="name">Yair Linn Htet</h2>
+              <span class="year">2G IT</span>
+              <span class="role developer">Developer</span>
+            </li>
+            <!--Person2-->
+            <li class="card">
+              <div class="img">
+                <img
+                  src="../profiles/ppk.png"
+                  alt="Card profiles"
+                  draggable="false"
+                />
+              </div>
+              <h2 class="name">Phoo Paing Khin</h2>
+              <span class="year">2G IT</span>
+              <span class="role uidesigner">UI Designer </span>
+            </li>
+            <!--Person3-->
+            <li class="card">
+              <div class="img">
+                <img
+                  src="../profiles/ysyp.png"
+                  alt="Card profiles"
+                  draggable="false"
+                />
+              </div>
+              <h2 class="name">Yoon Shwe Yi Phyoe</h2>
+              <span class="year">2G IT</span>
+              <span class="role graphicdesigner">Graphic Designer</span>
+            </li>
+            <!--Person4-->
+          </ul>
+          <i id="right" class="fa-solid fa-angle-right arrow"></i>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Content -->
+    <footer>
+      <section class="footer-contents">
+        <div class="itlogo">
+          <ul>
+            <li>
+              <a
+                href="http://www.gtimyingyan.edu.mm/?page_id=469"
+                target="_blank"
+                ><img src="../images/ITLogoforGT.png" alt="GreenTvet IT logo"
+              /></a>
+            </li>
+            <li>MGN IT Department</li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Contact Information</h3>
+          <ul>
+            <li>
+              <a
+                href="https://maps.app.goo.gl/RTszE7mBRUPK4fZr9"
+                target="_blank"
+                ><i class="fas fa-map-marker-alt"></i> Myingyan GTI College</a
+              >
+            </li>
+            <li>
+              <a href="tel:+959797852400"
+                ><i class="fa-solid fa-phone"></i> Call Us</a
+              >
+            </li>
+            <li>
+              <a href="mailto:"
+                ><i class="fa-solid fa-envelope"></i> &copy;mail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <hr />
+      <p class="copy-right">
+        <small> &copy; 2024-2025 IT Students </small>
+      </p>
+    </footer>
+  </body>
+</html>

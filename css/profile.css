@@ -1,0 +1,183 @@
+.meetTeam {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  padding: 0 35px;
+}
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+}
+.wrapper i {
+  display: none;
+}
+.wrapper .arrow {
+  height: 50px;
+  width: 50px;
+  background: #fff;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  font-size: 1.25rem;
+  transform: translateY(-50%);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.wrapper .arrow:first-child {
+  left: -22px;
+}
+.wrapper .arrow:last-child {
+  right: -22px;
+}
+.wrapper .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: 0;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  height: 342px;
+  list-style: none;
+  background-color: lightgreen;
+  border-radius: 8px;
+  display: flex;
+  padding-bottom: 15px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  border: 1px solid green;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.carousel .card:hover {
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+.card .img {
+  background-color: green;
+  width: 148px;
+  height: 148px;
+  border-radius: 50%;
+}
+.card .img img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3.5px solid yellow;
+}
+
+.card .name {
+  font-weight: 600;
+  font-size: 1.5em;
+  margin: 30px 0 5px;
+}
+.card .role {
+  font-size: 0.8rem;
+}
+.team-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.developer {
+  padding: 0.7rem;
+  color: #fff;
+  background-color: #4a90e2;
+  width: fit-content;
+  border-radius: 0.4rem;
+}
+
+.uidesigner {
+  padding: 0.7rem;
+  color: #fff;
+  background-color: #7ed321;
+  width: fit-content;
+  border-radius: 0.4rem;
+}
+
+.graphicdesigner {
+  padding: 0.7rem;
+  color: #000000;
+  background-color: #f5a623;
+  width: fit-content;
+  border-radius: 0.4rem;
+}
+.contentwriter {
+  padding: 0.7rem;
+  color: #000000;
+  background-color: #50e3c2;
+  width: fit-content;
+  border-radius: 0.4rem;
+}
+.websitetester {
+  padding: 0.7rem;
+  color: #000000;
+  background-color: #9b9b9b;
+  width: fit-content;
+  border-radius: 0.4rem;
+}
+
+.meethead {
+  color: #fff;
+}
+.meetdes {
+  color: #fff;
+}
+
+.card .year {
+  margin-bottom: 10px;
+}
+
+.meethead {
+  color: green;
+  font-size: clamp(1rem, 0.75rem + 1.333vw, 1.5rem);
+}
+.meetdes {
+  color: green;
+  font-size: clamp(0.8rem, 0.7rem + 0.533vw, 1rem);
+}
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+  .wrapper i {
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}

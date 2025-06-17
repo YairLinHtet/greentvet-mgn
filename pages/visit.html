@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/Green TVET Title log.png" />
+    <title>Learn Now</title>
+    <!-- Css Links -->
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/visit.css" />
+
+    <!-- Scripts -->
+    <script src="../scripts/button.js" defer></script>
+    <script src="../scripts/translate.js" defer></script>
+
+    <!-- Google fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="../index.html">
+          <img
+            class="logoimg"
+            src="../images/Green TVET Title log.png"
+            alt="GreenTVET"
+          />
+        </a>
+      </div>
+      <!-- Mobile Sidebar -->
+      <ul class="sidebar">
+        <li onclick="hideMenu()">
+          <a class="nav-links">
+            <img
+              src="../assets/cancel_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+              alt="Close"
+            />
+          </a>
+        </li>
+        <li><a class="nav-links" href="../index.html">Home</a></li>
+        <li class="campaign">
+          <a class="nav-links cam-choose" href="#">
+            Campaign <i class="fa-solid fa-caret-down"></i>
+          </a>
+          <ul class="cam-dropdown">
+            <li><a href="../pages/weekend.html">Weekend Action</a></li>
+            <li><a href="../pages/it.html">IT</a></li>
+            <li><a href="../pages/civil.html">Civil</a></li>
+            <li><a href="../pages/mech.html">Mechanical</a></li>
+            <li><a href="../pages/ec.html">Electronics</a></li>
+            <li><a href="../pages/ep.html">Electrical</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-links" href="../pages/about.html">About</a></li>
+        <li><a class="nav-links" href="../pages/contact.html">Contact</a></li>
+        <!-- Language -->
+        <li class="dropdown">
+          <a href="#" class="nav-links lang-option">
+            Language <i class="fa-solid fa-language"></i>
+          </a>
+          <ul class="lang-dropdown">
+            <li>
+              <a href="#" class="lang-link" data-lang="en">English</a>
+            </li>
+            <li>
+              <a href="#" class="lang-link" data-lang="my">မြန်မာ</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="desktop">
+        <li><a class="nav-links" href="../index.html">Home</a></li>
+        <li class="campaign">
+          <a class="nav-links cam-choose" href="#">
+            Campaign <i class="fa-solid fa-caret-down"></i>
+          </a>
+          <ul class="cam-dropdown">
+            <li><a href="../pages/weekend.html">Weekend Action</a></li>
+            <li><a href="../pages/it.html">IT</a></li>
+            <li><a href="../pages/civil.html">Civil</a></li>
+            <li><a href="../pages/mech.html">Mechanical</a></li>
+            <li><a href="../pages/ec.html">Electronics</a></li>
+            <li><a href="../pages/ep.html">Electrical</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-links" href="../pages/about.html">About</a></li>
+        <li><a class="nav-links" href="../pages/contact.html">Contact</a></li>
+        <!-- Language -->
+        <li class="dropdown">
+          <a href="#" class="nav-links lang-option"
+            >Language <i class="fa-solid fa-language"></i>
+          </a>
+          <ul class="lang-dropdown">
+            <li>
+              <a href="#" class="lang-link" data-lang="en">English</a>
+            </li>
+            <li><a href="#" class="lang-link" data-lang="my">မြန်မာ</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="menu" onclick="showMenu()">
+        <a href="#">
+          <img
+            class="menu-button"
+            src="../assets/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+            alt="Menu"
+          />
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="green">
+        <div class="green-left">
+          <img src="../images/school GTI Myingyan.png" alt="" />
+        </div>
+        <div class="green-right">
+          <h2 data-translate="greenh" class="green-heading">
+            What is Green TVET?
+          </h2>
+          <p data-translate="greenp1" class="green-p">
+            Our planet needs us! Things like climate change and pollution are
+            big problems. To fix them, we need new ways of living and working
+            that are kind to the Earth.
+          </p>
+          <p data-translate="greenp2" class="green-p">
+            Green TVET means Technical and Vocational Education and Training
+            focused on keeping our planet healthy. It's not just about learning
+            a job; it's about learning a job that also helps the environment. We
+            train students for "green jobs"jobs that are good for nature and
+            growing fast!
+          </p>
+        </div>
+      </section>
+      <article class="dr-shyama">
+        <div class="about-dr">
+          <div class="dr-profile">
+            <img
+              src="../profiles/Dr. Shyamal Majumdar.png"
+              alt="Dr.Shyamal Majumdar Photo"
+            />
+            <h2 data-translate="doctorname" class="dr-heading">
+              Dr. Shyamal Majumdar
+            </h2>
+          </div>
+
+          <p data-translate="doctorp1" class="dr-p">
+            Dr. Shyamal Majumdar is a highly influential figure in global
+            education. In 2010, he served as the Director General of the Colombo
+            Plan Staff College (CPSC), an organization dedicated to improving
+            job skills education across Asia.
+          </p>
+          <p data-translate="doctorp2" class="dr-p">
+            During his leadership at CPSC, Dr. Majumdar launched key projects,
+            including one focused on training people to fight poverty through
+            skills. He also helped CPSC earn an award from UNESCO, a major
+            global education body.
+          </p>
+          <p data-translate="doctorp3" class="dr-p">
+            Beyond CPSC, Dr. Majumdar has worked with other big groups like
+            UNESCO and the World Bank. He's an expert in training teachers,
+            using technology in classrooms, ensuring high-quality education, and
+            promoting "Green Jobs"—skills for environmentally friendly careers.
+            His work continues to significantly shape how people gain skills for
+            a better future worldwide.
+          </p>
+        </div>
+      </article>
+
+      <section class="important-container">
+        <div class="text">
+          <h2 data-translate="importanth" class="text-heading">
+            Why is Green TVET So Important Now?
+          </h2>
+          <p data-translate="importantp" class="text-p">
+            The world is changing. More and more businesses want to be
+            eco-friendly. This means they need people with "green skills." Green
+            TVET helps you get these skills because:
+          </p>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <h2 data-translate="carehead" class="card-heading">
+              Care for Our Planet
+            </h2>
+            <p data-translate="carepar" class="card-p">
+              Green TVET isn't just about tools and machines. It also helps you
+              understand why being green is important. It teaches you to be a
+              responsible citizen who cares about nature, not just at work, but
+              in your daily life too
+            </p>
+          </div>
+          <div class="card">
+            <h2 data-translate="savehead" class="card-heading">
+              Save Resources
+            </h2>
+            <p data-translate="savepar" class="card-p">
+              You'll learn how to use less water, less energy, and make less
+              trash in your job. This saves money for businesses and helps the
+              planet. You'll also learn to think of new, clever ways to solve
+              problems in an eco-friendly way.
+            </p>
+          </div>
+          <div class="card">
+            <h2 data-translate="goalshead" class="card-heading">
+              Reach Global Goals
+            </h2>
+            <p data-translate="goalspar" class="card-p">
+              Countries around the world have goals to make the Earth healthier
+              and fairer (called Sustainable Development Goals). Green TVET
+              helps us reach these goals by training people who can make a real
+              difference
+            </p>
+            <a class="goals-button" href="../pages/sdg.html">
+              Explore Global Goals
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="green-foundation">
+        <div class="green-foundation-title">
+          <h2 data-translate="foundationhead" class="green-foundation-heading">
+            The Foundation of a Green Future
+          </h2>
+        </div>
+        <div class="green-foundation-cards">
+          <div class="green-foundation-card">
+            <h2 class="green-foundation-card-h">Green Economy</h2>
+            <p data-translate="ecopar" class="green-foundation-card-p">
+              Our path to prosperity and a healthy planet. It's an economy that
+              cuts pollution, uses resources wisely, and provides fair
+              opportunities for everyone.
+            </p>
+          </div>
+          <div class="green-foundation-card">
+            <h2 class="green-foundation-card-h">Green Jobs</h2>
+            <p data-translate="jobpar" class="green-foundation-card-p">
+              Meaningful work that protects and restores our environment. These
+              vital roles exist in all sectors, building a sustainable future by
+              reducing harm.
+            </p>
+          </div>
+          <div class="green-foundation-card">
+            <h2 class="green-foundation-card-h">Green Skills</h2>
+            <p data-translate="skillpar" class="green-foundation-card-p">
+              The essential knowledge and abilities for a green future. Includes
+              specific technical skills and broad critical thinking for
+              environmental solutions.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="five-dimensions">
+        <div class="five-text">
+          <h2 data-translate="fivehead" class="five-text-h">
+            Five Dimensions Of Green TVET
+          </h2>
+          <p data-translate="fivepar" class="five-text-p">
+            The five dimensions of Green TVET, a framework for integrating
+            sustainable development into Technical and Vocational Education and
+            Training
+          </p>
+        </div>
+        <div class="five-cards">
+          <div class="five-card">
+            <h2 class="five-heading">Green Campus</h2>
+            <p data-translate="campuspar" class="five-p">
+              Eco-friendly facilities for sustainable learning.
+            </p>
+          </div>
+          <div class="five-card">
+            <h2 class="five-heading">Green Curriculum</h2>
+            <p data-translate="curriculumpar" class="five-p">
+              Sustainability-focused learning for future-ready skills.
+            </p>
+          </div>
+          <div class="five-card">
+            <h2 class="five-heading">Green Community</h2>
+            <p data-translate="communitypar" class="five-p">
+              Partnerships for green initiatives and local impact.
+            </p>
+          </div>
+          <div class="five-card">
+            <h2 class="five-heading">Green Research</h2>
+            <p data-translate="researchpar" class="five-p">
+              Innovating sustainable solutions through Research and Development.
+            </p>
+          </div>
+          <div class="five-card">
+            <h2 class="five-heading">Green Culture</h2>
+            <p data-translate="culturepar" class="five-p">
+              Fostering eco-conscious behavior and sustainable living.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Content -->
+    <footer id="main-footer">
+      <section class="footer-contents">
+        <div class="itlogo">
+          <ul>
+            <li>
+              <a
+                href="http://www.gtimyingyan.edu.mm/?page_id=469"
+                target="_blank"
+                ><img src="../images/ITLogoforGT.png" alt="GreenTvet IT logo"
+              /></a>
+            </li>
+            <li>MGN IT Department</li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Contact Information</h3>
+          <ul>
+            <li>
+              <a
+                href="https://maps.app.goo.gl/RTszE7mBRUPK4fZr9"
+                target="_blank"
+                ><i class="fas fa-map-marker-alt"></i> Myingyan GTI College</a
+              >
+            </li>
+            <li>
+              <a href="tel:+959797852400"
+                ><i class="fa-solid fa-phone"></i> Call Us</a
+              >
+            </li>
+            <li>
+              <a href="mailto:"
+                ><i class="fa-solid fa-envelope"></i> &copy;mail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <hr />
+      <p class="copy-right">
+        <small> &copy; 2024-2025 IT Students </small>
+      </p>
+    </footer>
+  </body>
+</html>

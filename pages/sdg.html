@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/Green TVET Title log.png" />
+    <title>SDGoals</title>
+    <!-- Css Links -->
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/sdg.css" />
+
+    <!-- Scripts -->
+    <script src="../scripts/button.js" defer></script>
+    <script src="../scripts/translate.js" defer></script>
+
+    <!-- Google fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="../index.html">
+          <img
+            class="logoimg"
+            src="../images/Green TVET Title log.png"
+            alt="GreenTVET"
+          />
+        </a>
+      </div>
+      <!-- Mobile Sidebar -->
+      <ul class="sidebar">
+        <li onclick="hideMenu()">
+          <a class="nav-links">
+            <img
+              src="../assets/cancel_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+              alt="Close"
+            />
+          </a>
+        </li>
+        <li><a class="nav-links" href="../index.html">Home</a></li>
+        <li class="campaign">
+          <a class="nav-links cam-choose" href="#">
+            Campaign <i class="fa-solid fa-caret-down"></i>
+          </a>
+          <ul class="cam-dropdown">
+            <li><a href="../pages/weekend.html">Weekend Action</a></li>
+            <li><a href="../pages/it.html">IT</a></li>
+            <li><a href="../pages/civil.html">Civil</a></li>
+            <li><a href="../pages/mech.html">Mechanical</a></li>
+            <li><a href="../pages/ec.html">Electronics</a></li>
+            <li><a href="../pages/ep.html">Electrical</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-links" href="../pages/about.html">About</a></li>
+        <li><a class="nav-links" href="../pages/contact.html">Contact</a></li>
+        <!-- Language -->
+        <li class="dropdown">
+          <a href="#" class="nav-links lang-option">
+            Language <i class="fa-solid fa-language"></i>
+          </a>
+          <ul class="lang-dropdown">
+            <li>
+              <a href="#" class="lang-link" data-lang="en">English</a>
+            </li>
+            <li>
+              <a href="#" class="lang-link" data-lang="my">မြန်မာ</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="desktop">
+        <li><a class="nav-links" href="../index.html">Home</a></li>
+        <li class="campaign">
+          <a class="nav-links cam-choose" href="#">
+            Campaign <i class="fa-solid fa-caret-down"></i>
+          </a>
+          <ul class="cam-dropdown">
+            <li><a href="../pages/weekend.html">Weekend Action</a></li>
+            <li><a href="../pages/it.html">IT</a></li>
+            <li><a href="../pages/civil.html">Civil</a></li>
+            <li><a href="../pages/mech.html">Mechanical</a></li>
+            <li><a href="../pages/ec.html">Electronics</a></li>
+            <li><a href="../pages/ep.html">Electrical</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-links" href="../pages/about.html">About</a></li>
+        <li><a class="nav-links" href="../pages/contact.html">Contact</a></li>
+        <!-- Language -->
+        <li class="dropdown">
+          <a href="#" class="nav-links lang-option"
+            >Language <i class="fa-solid fa-language"></i>
+          </a>
+          <ul class="lang-dropdown">
+            <li>
+              <a href="#" class="lang-link" data-lang="en">English</a>
+            </li>
+            <li><a href="#" class="lang-link" data-lang="my">မြန်မာ</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="menu" onclick="showMenu()">
+        <a href="#">
+          <img
+            class="menu-button"
+            src="../assets/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+            alt="Menu"
+          />
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="sdg">
+        <h2 data-translate="sdghead" class="sdg-head">Sustainable Development Goals (SDGs)</h2>
+        <span data-translate="sdgintro" class="sdg-intro"> Introduction </span>
+        <p data-translate="sdgp1" class="sdg-p">
+          The Sustainable Development Goals (SDGs) are 17 global goals set by
+          the United Nations in 2015. They aim to end poverty, protect the
+          environment, and ensure peace and prosperity for all by 2030. These
+          goals guide countries and individuals to work together toward a more
+          sustainable future.
+        </p>
+        <p data-translate="sdgp2" class="sdg-p">
+          They are part of the 2030 Agenda for Sustainable Development, adopted
+          by 193 countries, including Myanmar.
+        </p>
+      </div>
+      <section class="sdg-goals">
+        <div class="sdg-goals-title">
+          <h1 class="sdg-goals-title-head">The 17 Goals</h1>
+        </div>
+        <div class="sdg-goals-cards">
+          <div class="sdg-goals-card">
+            <img class="sdg-goals-card-img" src="../SDGs/Goal 1.png" alt="" />
+          </div>
+          <div class="sdg-goals-card">
+            <img class="sdg-goals-card-img" src="../SDGs/Goal 2.png" alt="" />
+          </div>
+          <div class="sdg-goals-card">
+            <img class="sdg-goals-card-img" src="../SDGs/Goal 3.png" alt="" />
+          </div>
+          <div class="sdg-goals-card">
+            <img class="sdg-goals-card-img" src="../SDGs/Goal 4.png" alt="" />
+          </div>
+          <div class="sdg-goals-card">
+            <img class="sdg-goals-card-img" src="../SDGs/Goal 5.png" alt="" />
+          </div>
+          <div class="sdg-goals-card">
+            <img class="sdg-goals-card-img" src="../SDGs/Goal 6.png" alt="" />
+          </div>
+          <div class="sdg-goals-card">
+            <img class="sdg-goals-card-img" src="../SDGs/Goal 7.png" alt="" />
+          </div>
+          <div class="sdg-goals-card">
+            <img class="sdg-goals-card-img" src="../SDGs/Goal 8.png" alt="" />
+          </div>
+          <div class="sdg-goals-card">
+            <img class="sdg-goals-card-img" src="../SDGs/Goal 9.png" alt="" />
+          </div>
+          <div class="sdg-goals-card">
+            <img class="sdg-goals-card-img" src="../SDGs/Goal 10.png" alt="" />
+          </div>
+          <div class="sdg-goals-card">
+            <img class="sdg-goals-card-img" src="../SDGs/Goal 11.png" alt="" />
+          </div>
+          <div class="sdg-goals-card">
+            <img class="sdg-goals-card-img" src="../SDGs/Goal 12.png" alt="" />
+          </div>
+          <div class="sdg-goals-card">
+            <img class="sdg-goals-card-img" src="../SDGs/Goal 13.png" alt="" />
+          </div>
+          <div class="sdg-goals-card">
+            <img class="sdg-goals-card-img" src="../SDGs/Goal 14.png" alt="" />
+          </div>
+          <div class="sdg-goals-card">
+            <img class="sdg-goals-card-img" src="../SDGs/Goal 15.png" alt="" />
+          </div>
+          <div class="sdg-goals-card">
+            <img class="sdg-goals-card-img" src="../SDGs/Goal 16.png" alt="" />
+          </div>
+          <div class="sdg-goals-card">
+            <img class="sdg-goals-card-img" src="../SDGs/Goal 17.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <div class="sdg-aims">
+        <h2 data-translate="aimstitle" class="sdg-aims-title">These goals aim to balance three key aspects of development:</h2>
+        <div class="sdg-aims-cards">
+          <div class="card">Environment</div>
+          <div class="card">Economy</div>
+          <div class="card">Society</div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Content -->
+    <footer id="main-footer">
+      <section class="footer-contents">
+        <div class="itlogo">
+          <ul>
+            <li>
+              <a
+                href="http://www.gtimyingyan.edu.mm/?page_id=469"
+                target="_blank"
+                ><img src="../images/ITLogoforGT.png" alt="GreenTvet IT logo"
+              /></a>
+            </li>
+            <li>MGN IT Department</li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Contact Information</h3>
+          <ul>
+            <li>
+              <a
+                href="https://maps.app.goo.gl/RTszE7mBRUPK4fZr9"
+                target="_blank"
+                ><i class="fas fa-map-marker-alt"></i> Myingyan GTI College</a
+              >
+            </li>
+            <li>
+              <a href="tel:+959797852400"
+                ><i class="fa-solid fa-phone"></i> Call Us</a
+              >
+            </li>
+            <li>
+              <a href="mailto:"
+                ><i class="fa-solid fa-envelope"></i> &copy;mail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <hr />
+      <p class="copy-right">
+        <small> &copy; 2024-2025 IT Students </small>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+.banner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 0 2%;
+}
+.banner .banner-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: darkgreen;
+}
+.banner .banner-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner .banner-right .banner-right-img {
+  max-width: 70%;
+  height: auto;
+}
+.banner .banner-left .banner-left-text .welcome {
+  font-size: clamp(1.3rem, 0.443rem + 2.286vw, 2.5rem);
+  margin-bottom: 1rem;
+}
+.banner .banner-left .banner-left-text .description {
+  font-size: clamp(0.7rem, 0.486rem + 0.571vw, 1rem);
+  margin-bottom: 1.2rem;
+}
+.banner .banner-left .banner-left-text .learn-button {
+  text-align: center;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: rgb(155, 230, 42);
+  font-size: 1rem;
+  cursor: pointer;
+}
+.banner .banner-left .banner-left-text .learn-button:hover {
+  background-color: rgb(240, 240, 16);
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.273);
+}
+.fa-arrow-right {
+  color: green;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner-right {
+    display: block;
+  }
+  .banner-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .banner-right {
+    display: flex;
+  }
+}

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/Green TVET Title log.png" />
+    <title>Weekend Movement</title>
+    <!-- Css Links -->
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/weekend.css" />
+
+    <!-- Scripts -->
+    <script src="../scripts/button.js" defer></script>
+    <script src="../scripts/translate.js" defer></script>
+    <script src="../scripts/weekendprofile.js" defer></script>
+
+    <!-- Google fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="../index.html">
+          <img
+            class="logoimg"
+            src="../images/Green TVET Title log.png"
+            alt="GreenTVET"
+          />
+        </a>
+      </div>
+      <!-- Mobile Sidebar -->
+      <ul class="sidebar">
+        <li onclick="hideMenu()">
+          <a class="nav-links">
+            <img
+              src="../assets/cancel_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+              alt="Close"
+            />
+          </a>
+        </li>
+        <li><a class="nav-links" href="../index.html">Home</a></li>
+        <li class="campaign">
+          <a class="nav-links cam-choose" href="#">
+            Campaign <i class="fa-solid fa-caret-down"></i>
+          </a>
+          <ul class="cam-dropdown">
+            <li><a href="../pages/weekend.html">Weekend Action</a></li>
+            <li><a href="../pages/it.html">IT</a></li>
+            <li><a href="../pages/civil.html">Civil</a></li>
+            <li><a href="../pages/mech.html">Mechanical</a></li>
+            <li><a href="../pages/ec.html">Electronics</a></li>
+            <li><a href="../pages/ep.html">Electrical</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-links" href="../pages/about.html">About</a></li>
+        <li><a class="nav-links" href="../pages/contact.html">Contact</a></li>
+        <!-- Language -->
+        <li class="dropdown">
+          <a href="#" class="nav-links lang-option">
+            Language <i class="fa-solid fa-language"></i>
+          </a>
+          <ul class="lang-dropdown">
+            <li>
+              <a href="#" class="lang-link" data-lang="en">English</a>
+            </li>
+            <li>
+              <a href="#" class="lang-link" data-lang="my">မြန်မာ</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="desktop">
+        <li><a class="nav-links" href="../index.html">Home</a></li>
+        <li class="campaign">
+          <a class="nav-links cam-choose" href="#">
+            Campaign <i class="fa-solid fa-caret-down"></i>
+          </a>
+          <ul class="cam-dropdown">
+            <li><a href="../pages/weekend.html">Weekend Action</a></li>
+            <li><a href="../pages/it.html">IT</a></li>
+            <li><a href="../pages/civil.html">Civil</a></li>
+            <li><a href="../pages/mech.html">Mechanical</a></li>
+            <li><a href="../pages/ec.html">Electronics</a></li>
+            <li><a href="../pages/ep.html">Electrical</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-links" href="../pages/about.html">About</a></li>
+        <li><a class="nav-links" href="../pages/contact.html">Contact</a></li>
+        <!-- Language -->
+        <li class="dropdown">
+          <a href="#" class="nav-links lang-option"
+            >Language <i class="fa-solid fa-language"></i>
+          </a>
+          <ul class="lang-dropdown">
+            <li>
+              <a href="#" class="lang-link" data-lang="en">English</a>
+            </li>
+            <li><a href="#" class="lang-link" data-lang="my">မြန်မာ</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="menu" onclick="showMenu()">
+        <a href="#">
+          <img
+            class="menu-button"
+            src="../assets/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+            alt="Menu"
+          />
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="weekend-banner">
+        <article class="weekend-article">
+          <h2 data-translate="weekendhead" class="heading">
+            Our routine every Saturday:
+          </h2>
+          <p data-translate="weekenddesc" class="description">
+            Every Saturday, we take out the trash bags from where the students
+            and teachers live. We take those trash bags to the waste lands.
+          </p>
+        </article>
+
+        <div class="slideshow-container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <img
+                id="slide1"
+                src="../images/weekend 1.jpg"
+                alt="Our Weekend Photo"
+              />
+              <img
+                id="slide2"
+                src="../images/weekend 2.jpg"
+                alt="Our Weekend Photo"
+              />
+              <img
+                id="slide3"
+                src="../images/weekend 3.jpg"
+                alt="Our Weekend Photo"
+              />
+            </div>
+            <div class="sider-nav">
+              <a href="#slide1"></a>
+              <a href="#slide2"></a>
+              <a href="#slide3"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="start-idea">
+        <div class="started">
+          <h2 data-translate="storyhead" class="start-heading">
+            The Story Behind Our Saturday Effort
+          </h2>
+
+          <p data-translate="storyp1" class="start-pargraph">
+            It all started when our school principal gave a powerful
+            presentation about Green TVET-a movement promoting environmental
+            sustainability in technical and vocational education. The message
+            was clear: we needed to take responsibility for keeping our school
+            clean and eco-friendly.
+          </p>
+          <p data-translate="storyp2" class="start-pargraph">
+            After the presentation, my friend Zar Ni Aung and I came up with an
+            idea. We noticed that trash was often left around the school,
+            harming both the environment and the school&rsquo;s image. Instead
+            of waiting for someone else to act, we decided to step up.
+          </p>
+        </div>
+      </section>
+      <hr />
+      <div class="volunteer">
+        <div class="volunteer-title">
+          <h2 data-translate="volunteerhead" class="volunteer-heading">
+            The Heart of Our Movement: Our Amazing Volunteers
+          </h2>
+
+          <p data-translate="volunteerp" class="volunteer-pargraph">
+            None of this would be possible without our team of dedicated
+            volunteers
+          </p>
+        </div>
+        <div class="volunteer-wrapper">
+          <i id="left" class="fa-solid fa-angle-left"></i>
+          <ul class="cards">
+            <!-- Person-1 -->
+            <li class="card">
+              <div class="img">
+                <img
+                  src="../volunteerImages/zna.jpg"
+                  alt="Profile Picture"
+                  draggable="false"
+                />
+              </div>
+              <h2 class="name">Zar Ni Aung</h2>
+              <span class="major">Mechanical</span>
+            </li>
+            <!-- Person-2 -->
+            <li class="card">
+              <div class="img">
+                <img
+                  src="../profiles/person5.jpg"
+                  alt="Profile Picture"
+                  draggable="false"
+                />
+              </div>
+              <h2 class="name">Yair Lin Htet</h2>
+              <span class="major">Info Tech</span>
+            </li>
+            <!-- Person-3 -->
+            <li class="card">
+              <div class="img">
+                <img
+                  src="../volunteerImages/mhn.jpg"
+                  alt="Profile Picture"
+                  draggable="false"
+                />
+              </div>
+              <h2 class="name">Myo Htet Naing</h2>
+              <span class="major">Civil</span>
+            </li>
+            <!-- Person-4 -->
+            <li class="card">
+              <div class="img">
+                <img
+                  src="../volunteerImages/pko.jpg"
+                  alt="Profile Picture"
+                  draggable="false"
+                />
+              </div>
+              <h2 class="name">Phyoe Khant Oo</h2>
+              <span class="major">Civil</span>
+            </li>
+            <!-- Person-5 -->
+            <li class="card">
+              <div class="img">
+                <img
+                  src="../volunteerImages/apk.jpg"
+                  alt="Profile Picture"
+                  draggable="false"
+                />
+              </div>
+              <h2 class="name">Aung Paing Khant</h2>
+              <span class="major">Mechanical</span>
+            </li>
+            <!-- Person-6 -->
+            <li class="card">
+              <div class="img">
+                <img
+                  src="../profiles/person5.jpg"
+                  alt="Profile Picture"
+                  draggable="false"
+                />
+              </div>
+              <h2 class="name">Kyaw Zaw Hein</h2>
+              <span class="major">Electrical</span>
+            </li>
+            <!-- Person-7 -->
+            <li class="card">
+              <div class="img">
+                <img
+                  src="../profiles/person5.jpg"
+                  alt="Profile Picture"
+                  draggable="false"
+                />
+              </div>
+              <h2 class="name">Naw Htoo Aung</h2>
+              <span class="major">Civil</span>
+            </li>
+            <!-- Person-8 -->
+            <li class="card">
+              <div class="img">
+                <img
+                  src="../profiles/person5.jpg"
+                  alt="Profile Picture"
+                  draggable="false"
+                />
+              </div>
+              <h2 class="name">Kyaw Htet Aung</h2>
+              <span class="major">Electrical</span>
+            </li>
+            <li class="card">
+              <div class="img">
+                <img
+                  src="../profiles/person5.jpg"
+                  alt="Profile Picture"
+                  draggable="false"
+                />
+              </div>
+              <h2 class="name">Bhone Pyae Sone</h2>
+              <span class="major">Electrical</span>
+            </li>
+          </ul>
+          <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Content -->
+    <footer id="main-footer">
+      <section class="footer-contents">
+        <div class="itlogo">
+          <ul>
+            <li>
+              <a
+                href="http://www.gtimyingyan.edu.mm/?page_id=469"
+                target="_blank"
+                ><img src="../images/ITLogoforGT.png" alt="GreenTvet IT logo"
+              /></a>
+            </li>
+            <li>MGN IT Department</li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Contact Information</h3>
+          <ul>
+            <li>
+              <a
+                href="https://maps.app.goo.gl/RTszE7mBRUPK4fZr9"
+                target="_blank"
+                ><i class="fas fa-map-marker-alt"></i> Myingyan GTI College</a
+              >
+            </li>
+            <li>
+              <a href="tel:+959797852400"
+                ><i class="fa-solid fa-phone"></i> Call Us</a
+              >
+            </li>
+            <li>
+              <a href="mailto:"
+                ><i class="fa-solid fa-envelope"></i> &copy;mail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <hr />
+      <p class="copy-right">
+        <small> &copy; 2024-2025 IT Students </small>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,218 @@
+.green {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.green-left {
+  width: 100%;
+  height: auto;
+}
+.green-right {
+  width: 100%;
+  height: auto;
+}
+.green-left img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4%;
+  object-fit: cover;
+}
+
+.green-right {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.green-right .green-heading {
+  font-size: clamp(1.2rem, 0.937rem + 1.404vw, 2.2rem);
+}
+.green-right .green-p {
+  font-size: clamp(0.7rem, 0.647rem + 0.281vw, 0.9rem);
+}
+.dr-shyama {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+.about-dr {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  background-color: rgb(144, 222, 144);
+  padding: 1rem;
+  border-radius: 1.5rem;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+.dr-profile {
+  width: 100%;
+  height: auto;
+}
+
+.dr-profile img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.dr-heading {
+  font-size: clamp(1rem, 0.868rem + 0.702vw, 1.5rem);
+}
+.dr-p {
+  font-size: clamp(0.7rem, 0.647rem + 0.281vw, 0.9rem);
+}
+
+main hr {
+  width: 100%;
+  height: 1.5px;
+  background-color: green;
+  border: none;
+}
+
+.important-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5rem;
+  gap: 5rem;
+  margin-bottom: 5rem;
+  padding: min(50px, 7%);
+}
+.card {
+  padding: 2rem;
+  background-color: lightgreen;
+  border-radius: 1rem;
+  text-align: center;
+  border: 1px solid green;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.important-container .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  justify-content: center;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.text-heading {
+  text-align: center;
+  font-size: clamp(1.2rem, 0.989rem + 1.123vw, 2rem);
+}
+.text-p {
+  text-align: center;
+  font-size: clamp(0.7rem, 0.647rem + 0.281vw, 0.9rem);
+}
+.card-heading {
+  font-size: clamp(1rem, 0.868rem + 0.702vw, 1.5rem);
+}
+.card-p {
+  font-size: clamp(0.7rem, 0.647rem + 0.281vw, 0.9rem);
+}
+.goals-button {
+  padding: 0.7rem;
+  text-align: center;
+  color: green;
+  border-radius: 1rem;
+  border: 2px solid green;
+  font-size: clamp(0.7rem, 0.647rem + 0.281vw, 0.9rem);
+  background: none;
+  transition: background 1s;
+}
+.goals-button:hover {
+  background: yellowgreen;
+  box-shadow: 2px 4px rgba(0, 0, 0, 0.2);
+  color: yellow;
+}
+.five-dimensions {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  gap: 4rem;
+  text-align: center;
+  padding: min(50px, 7%);
+}
+.five-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+.five-card {
+  background: #bfff80;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid green;
+}
+.five-dimensions .five-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  justify-content: center;
+}
+.five-heading {
+  font-size: clamp(1rem, 0.868rem + 0.702vw, 1.5rem);
+}
+.five-p {
+  font-size: clamp(0.7rem, 0.647rem + 0.281vw, 0.9rem);
+}
+.five-text-h {
+  font-size: clamp(1.2rem, 0.989rem + 1.123vw, 2rem);
+}
+.five-text-p {
+  font-size: clamp(0.7rem, 0.647rem + 0.281vw, 0.9rem);
+}
+.green-foundation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 1rem;
+}
+
+.green-foundation .green-foundation-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  gap: 1rem;
+}
+.green-foundation .green-foundation-cards .green-foundation-card {
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #aae470;
+  border-radius: 1rem;
+}
+.green-foundation-heading {
+  font-size: clamp(1rem, 0.684rem + 1.684vw, 2.2rem);
+}
+.green-foundation-card-h {
+  font-size: clamp(1rem, 0.868rem + 0.702vw, 1.5rem);
+}
+.green-foundation-card-p {
+  font-size: clamp(0.8rem, 0.747rem + 0.281vw, 1rem);
+}
+@media screen and (max-width: 768px) {
+  .green {
+    flex-direction: column;
+  }
+  .dr-shyama {
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,220 @@
+.weekend-article {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.weekend-article .heading {
+  padding-bottom: 1rem;
+  font-size: clamp(1.3rem, 1.063rem + 1.263vw, 2.2rem);
+}
+
+.weekend-article .description {
+  font-size: clamp(0.75rem, 0.684rem + 0.351vw, 1rem);
+  line-height: 150%;
+}
+.slideshow-container {
+  padding: 2rem;
+}
+
+.slider-wrapper {
+  position: relative;
+  max-width: 60rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  aspect-ratio: 16/9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.35);
+  border-radius: 0.5rem;
+}
+.slider::-webkit-scrollbar {
+  display: none;
+}
+.slider img {
+  width: 100%;
+  flex-shrink: 0;
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.sider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.sider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.5;
+  transition: opacity ease 250ms;
+}
+.sider-nav a:hover {
+  opacity: 1;
+}
+
+.start-idea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.start-heading {
+  text-align: center;
+  padding-bottom: 2rem;
+  font-size: clamp(1.3rem, 1.063rem + 1.263vw, 2.2rem);
+  text-shadow: #fff;
+}
+
+.start-pargraph {
+  line-height: 150%;
+  font-size: clamp(0.75rem, 0.684rem + 0.351vw, 1rem);
+  display: block;
+  justify-content: flex-start;
+  padding-bottom: 2rem;
+}
+.started {
+  padding: 1% 10%;
+}
+
+.volunteer {
+  width: 100%;
+  min-height: 60vh;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+hr {
+  border: none;
+  background-color: green;
+  height: 1px;
+}
+
+.volunteer-heading {
+  text-align: center;
+  padding-bottom: 2rem;
+  font-size: clamp(1.3rem, 1.063rem + 1.263vw, 2.2rem);
+  text-shadow: #fff;
+}
+.volunteer-pargraph {
+  text-align: center;
+  line-height: 150%;
+  font-size: clamp(0.75rem, 0.684rem + 0.351vw, 1rem);
+  padding-bottom: 2rem;
+}
+
+/* Meet Volounteers */
+.volunteer-wrapper i {
+  height: 30px;
+  width: 30px;
+  background: wheat;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  font-size: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.volunteer-wrapper i:first-child {
+  left: -11px;
+}
+.volunteer-wrapper i:last-child {
+  right: -11px;
+}
+.volunteer-wrapper {
+  max-width: 80vw;
+  width: 100%;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.volunteer-wrapper .cards {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 4) - 12px);
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: 0;
+  flex-grow: 1;
+}
+.cards::-webkit-scrollbar {
+  display: none;
+}
+.cards .card {
+  scroll-snap-align: start;
+  height: 171px;
+  background: rgb(73, 225, 73);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
+  cursor: pointer;
+}
+.cards.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.cards.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+
+.card .img img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+.card .name {
+  font-weight: 600;
+  font-size: clamp(0.55rem, 0.432rem + 0.632vw, 1rem);
+  text-align: center;
+  margin: 0.5rem 0 0.5rem;
+}
+
+.card .major {
+  font-size: clamp(0.44rem, 0.372rem + 0.365vw, 0.7rem);
+}
+
+@media screen and (max-width: 900px) {
+  .volunteer-wrapper .cards {
+    grid-auto-columns: calc((100% / 3) - 6px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .volunteer-wrapper .cards {
+    grid-auto-columns: calc((100% / 2) - 3px);
+  }
+}
+@supports not (aspect-ratio: 1) {
+  .slider {
+    height: 240px; /* Fallback for old iOS Safari */
+  }
+}
