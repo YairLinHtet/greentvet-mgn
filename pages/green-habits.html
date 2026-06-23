@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../images/Green TVET Title log.png" />
-    <title>EP Movement</title>
+    <title>Green Habits</title>
     <!-- Css Links -->
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/footer.css" />
-    <link rel="stylesheet" href="../css/campaign.css" />
+    <link rel="stylesheet" href="../css/green-habits.css" />
 
     <!-- Scripts -->
     <script src="../scripts/button.js" defer></script>
     <script src="../scripts/translate.js" defer></script>
+    <script src="../scripts/green-habits.js" defer></script>
 
     <!-- Google fonts -->
     <link
@@ -116,28 +117,28 @@
     </nav>
 
     <main>
-      <h1 class="campaign-year-title">Electrical Campaign</h1>
-
-      <section class="campaign-year-wrapper">
-        <div class="year-card">
-          <img src="" alt="Electrical Green Campaign" />
-          <h2>2025 Campaign</h2>
-          <p>
-            Here are the campaigns led by the Electrical department in 2025.
-          </p>
-
-          <a class="year-links" href="../pages/campaign/ep-2025.html">Click to view.</a>
-        </div>
-
-        <div class="year-card">
-          <!-- <img src="" alt="Electrical Green Campaign" /> -->
-          <h2>2026 Campaign</h2>
-          <p>
-            Here are the campaigns led by the Electrical department in 2025.
-          </p>
-
-          <a class="year-links" href="#">Coming Soon</a>
-        </div>
+      <section class="habits">
+        <section class="habits-container">
+          <div class="habits-title">
+            <h1>Green Habits Tracker</h1>
+            <p>နေ့စဉ် အလေ့အကျင့်ကောင်းများဖြင့် ကမ္ဘာကို ကယ်တင်စို့</p>
+            <div class="stats-container">
+              <div class="stats-item">
+                <span class="stat-value" id="xp-display">0</span>
+                <span class="stats-text">XP Points</span>
+              </div>
+              <div class="stats-item time-highlight">
+                <span class="stats-text">Reset In</span>
+                <span class="stat-value" id="timer-display">00:00:00</span>
+              </div>
+              <div class="stats-item">
+                <span class="stat-value" id="count-display">0/10</span>
+                <span class="stats-text">Today Complete</span>
+              </div>
+            </div>
+          </div>
+          <section class="habit-lists" id="habit-container"></section>
+        </section>
       </section>
     </main>
 

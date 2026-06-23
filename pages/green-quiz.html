@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../images/Green TVET Title log.png" />
-    <title>EP Movement</title>
+    <title>Green Quiz</title>
     <!-- Css Links -->
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/footer.css" />
-    <link rel="stylesheet" href="../css/campaign.css" />
+    <link rel="stylesheet" href="../css/green-quiz.css" />
 
     <!-- Scripts -->
     <script src="../scripts/button.js" defer></script>
     <script src="../scripts/translate.js" defer></script>
+    <script src="../scripts/green-quiz.js" defer></script>
 
     <!-- Google fonts -->
     <link
@@ -116,28 +117,63 @@
     </nav>
 
     <main>
-      <h1 class="campaign-year-title">Electrical Campaign</h1>
+      <section class="green-quiz-app">
+        <section class="quiz-app-container">
+          <section class="green-quiz-container">
+            <div class="green-quiz-header-text">
+              <h2 class="quiz-title">Daily Green Quiz</h2>
+              <p class="quiz-subtitle">
+                နေ့စဉ် မေးခွန်းတိုများကို ဖြေဆိုပြီး အစိမ်းရောင် ဗဟုသုတများ
+                စုဆောင်းစို့
+              </p>
+            </div>
 
-      <section class="campaign-year-wrapper">
-        <div class="year-card">
-          <img src="" alt="Electrical Green Campaign" />
-          <h2>2025 Campaign</h2>
-          <p>
-            Here are the campaigns led by the Electrical department in 2025.
-          </p>
+            <div class="quiz-stats">
+              <div class="stats-card xp-card">
+                <span class="stats-text">Score</span>
+                <span id="xp-points">0</span>
+              </div>
+              <div class="stats-card time-card">
+                <span class="stats-text reset-text">Reset In</span>
+                <span id="reset-time">00:00:00</span>
+              </div>
+              <div class="stats-card progress-card">
+                <span class="stats-text">Question</span>
+                <span id="reset-time">0/8</span>
+              </div>
+            </div>
 
-          <a class="year-links" href="../pages/campaign/ep-2025.html">Click to view.</a>
-        </div>
-
-        <div class="year-card">
-          <!-- <img src="" alt="Electrical Green Campaign" /> -->
-          <h2>2026 Campaign</h2>
-          <p>
-            Here are the campaigns led by the Electrical department in 2025.
-          </p>
-
-          <a class="year-links" href="#">Coming Soon</a>
-        </div>
+            <div class="quiz-content">
+              <div class="category-container">
+                <span id="category-badge" class="badge-tag">CATEGORY</span>
+              </div>
+              <h2 id="question-text" class="question-display">
+                Loading Question...
+              </h2>
+              <div id="option-container" class="option-list"></div>
+            </div>
+            <div id="explanation-box" class="explanation-wrapper hidden">
+              <div class="explanation-inner">
+                <h4>ရှင်းလင်းချက်</h4>
+                <p id="explanation-text"></p>
+              </div>
+            </div>
+            <div class="quiz-action">
+              <button id="next-btn" class="quiz-nav disabled">
+                Next Question
+              </button>
+            </div>
+          </section>
+          <section class="result-screen hidden">
+            <h2>ယနေ့အတွက် ပြီးဆုံးပါပြီ။</h2>
+            <p class="final-xp-text">
+              ယနေ့ရရှိသော ရမှတ်: <span id="final-xp">0</span> XP
+            </p>
+            <p class="result-note">
+              မနက်ဖြန်တွင် မေးခွန်းအသစ်များဖြင့် ပြန်လည်ဖြေဆိုနိုင်ပါပြီ။
+            </p>
+          </section>
+        </section>
       </section>
     </main>
 
