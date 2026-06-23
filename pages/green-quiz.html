@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/Green TVET Title log.png" />
+    <title>Green Quiz</title>
+    <!-- Css Links -->
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/green-quiz.css" />
+
+    <!-- Scripts -->
+    <script src="../scripts/button.js" defer></script>
+    <script src="../scripts/translate.js" defer></script>
+    <script src="../scripts/green-quiz.js" defer></script>
+
+    <!-- Google fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="../index.html">
+          <img
+            class="logoimg"
+            src="../images/Green TVET Title log.png"
+            alt="GreenTVET"
+          />
+        </a>
+      </div>
+      <!-- Mobile Sidebar -->
+      <ul class="sidebar">
+        <li onclick="hideMenu()">
+          <a class="nav-links">
+            <img
+              src="../assets/cancel_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+              alt="Close"
+            />
+          </a>
+        </li>
+        <li><a class="nav-links" href="../index.html">Home</a></li>
+        <li class="campaign">
+          <a class="nav-links cam-choose" href="#">
+            Campaign <i class="fa-solid fa-caret-down"></i>
+          </a>
+          <ul class="cam-dropdown">
+            <li><a href="../pages/weekend.html">Weekend Action</a></li>
+            <li><a href="../pages/it.html">IT</a></li>
+            <li><a href="../pages/civil.html">Civil</a></li>
+            <li><a href="../pages/mech.html">Mechanical</a></li>
+            <li><a href="../pages/ec.html">Electronics</a></li>
+            <li><a href="../pages/ep.html">Electrical</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-links" href="../pages/about.html">About</a></li>
+        <li><a class="nav-links" href="../pages/contact.html">Contact</a></li>
+        <!-- Language -->
+        <li class="dropdown">
+          <a href="#" class="nav-links lang-option">
+            Language <i class="fa-solid fa-language"></i>
+          </a>
+          <ul class="lang-dropdown">
+            <li>
+              <a href="#" class="lang-link" data-lang="en">English</a>
+            </li>
+            <li>
+              <a href="#" class="lang-link" data-lang="my">မြန်မာ</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="desktop">
+        <li><a class="nav-links" href="../index.html">Home</a></li>
+        <li class="campaign">
+          <a class="nav-links cam-choose" href="#">
+            Campaign <i class="fa-solid fa-caret-down"></i>
+          </a>
+          <ul class="cam-dropdown">
+            <li><a href="../pages/weekend.html">Weekend Action</a></li>
+            <li><a href="../pages/it.html">IT</a></li>
+            <li><a href="../pages/civil.html">Civil</a></li>
+            <li><a href="../pages/mech.html">Mechanical</a></li>
+            <li><a href="../pages/ec.html">Electronics</a></li>
+            <li><a href="../pages/ep.html">Electrical</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-links" href="../pages/about.html">About</a></li>
+        <li><a class="nav-links" href="../pages/contact.html">Contact</a></li>
+        <!-- Language -->
+        <li class="dropdown">
+          <a href="#" class="nav-links lang-option"
+            >Language <i class="fa-solid fa-language"></i>
+          </a>
+          <ul class="lang-dropdown">
+            <li>
+              <a href="#" class="lang-link" data-lang="en">English</a>
+            </li>
+            <li><a href="#" class="lang-link" data-lang="my">မြန်မာ</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="menu" onclick="showMenu()">
+        <a href="#">
+          <img
+            class="menu-button"
+            src="../assets/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+            alt="Menu"
+          />
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="green-quiz-app">
+        <section class="quiz-app-container">
+          <section class="green-quiz-container">
+            <div class="green-quiz-header-text">
+              <h2 class="quiz-title">Daily Green Quiz</h2>
+              <p class="quiz-subtitle">
+                နေ့စဉ် မေးခွန်းတိုများကို ဖြေဆိုပြီး အစိမ်းရောင် ဗဟုသုတများ
+                စုဆောင်းစို့
+              </p>
+            </div>
+
+            <div class="quiz-stats">
+              <div class="stats-card xp-card">
+                <span class="stats-text">Score</span>
+                <span id="xp-points">0</span>
+              </div>
+              <div class="stats-card time-card">
+                <span class="stats-text reset-text">Reset In</span>
+                <span id="reset-time">00:00:00</span>
+              </div>
+              <div class="stats-card progress-card">
+                <span class="stats-text">Question</span>
+                <span id="reset-time">0/8</span>
+              </div>
+            </div>
+
+            <div class="quiz-content">
+              <div class="category-container">
+                <span id="category-badge" class="badge-tag">CATEGORY</span>
+              </div>
+              <h2 id="question-text" class="question-display">
+                Loading Question...
+              </h2>
+              <div id="option-container" class="option-list"></div>
+            </div>
+            <div id="explanation-box" class="explanation-wrapper hidden">
+              <div class="explanation-inner">
+                <h4>ရှင်းလင်းချက်</h4>
+                <p id="explanation-text"></p>
+              </div>
+            </div>
+            <div class="quiz-action">
+              <button id="next-btn" class="quiz-nav disabled">
+                Next Question
+              </button>
+            </div>
+          </section>
+          <section class="result-screen hidden">
+            <h2>ယနေ့အတွက် ပြီးဆုံးပါပြီ။</h2>
+            <p class="final-xp-text">
+              ယနေ့ရရှိသော ရမှတ်: <span id="final-xp">0</span> XP
+            </p>
+            <p class="result-note">
+              မနက်ဖြန်တွင် မေးခွန်းအသစ်များဖြင့် ပြန်လည်ဖြေဆိုနိုင်ပါပြီ။
+            </p>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <!-- Footer Content -->
+    <footer id="main-footer">
+      <section class="footer-contents">
+        <div class="itlogo">
+          <ul>
+            <li>
+              <a
+                href="http://www.gtimyingyan.edu.mm/?page_id=469"
+                target="_blank"
+                ><img src="../images/ITLogoforGT.png" alt="GreenTvet IT logo"
+              /></a>
+            </li>
+            <li>MGN IT Department</li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Contact Information</h3>
+          <ul>
+            <li>
+              <a
+                href="https://maps.app.goo.gl/RTszE7mBRUPK4fZr9"
+                target="_blank"
+                ><i class="fas fa-map-marker-alt"></i> Myingyan GTI</a
+              >
+            </li>
+            <li>
+              <a href="tel:+959797852400"
+                ><i class="fa-solid fa-phone"></i> Call Us</a
+              >
+            </li>
+            <li>
+              <a href="mailto:"
+                ><i class="fa-solid fa-envelope"></i> &copy;mail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <hr />
+      <p class="copy-right">
+        <small> &copy; 2024-2025 IT Students </small>
+      </p>
+    </footer>
+  </body>
+</html>

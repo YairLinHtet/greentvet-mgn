@@ -1,0 +1,223 @@
+.campaign-year-title {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: clamp(1rem, 0.714rem + 1.429vw, 2rem);
+}
+.campaign-year-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 5% 8%;
+  gap: 2rem;
+}
+.year-card {
+  background-color: #45b449b1;
+  padding: 1.5rem;
+  gap: 1rem;
+  border-radius: 0.7rem;
+  box-shadow: 5px 8px 8px rgba(54, 55, 50, 0.392);
+  flex: 1 1 300px;
+  max-width: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+}
+.year-card:hover {
+  border-color: red;
+}
+.year-card img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+  border-radius: 0.5rem;
+}
+.year-card a {
+  padding: 0.5rem 1rem;
+  background-color: rgb(94, 218, 17);
+  border-radius: 0.6rem;
+  font-size: 0.9rem;
+  color: rgb(78, 64, 38);
+  border: 2px solid rgba(57, 52, 52, 0.504);
+}
+.year-card a:hover {
+  background-color: rgb(151, 239, 9);
+  border-color: red;
+}
+
+.green-campaign {
+  padding: 3% 8%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.green-campaign h2 {
+  font-size: clamp(1rem, 0.857rem + 0.714vw, 1.5rem);
+  margin-top: 1rem;
+  border-bottom: 3px solid rgb(11, 114, 45);
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.green-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+.green-card {
+  background-color: rgb(60, 191, 117);
+  padding: 2rem;
+  box-shadow: 8px 8px 13px rgba(0, 0, 0, 0.199);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 1rem;
+  border-top: 2px solid darkgreen;
+  border-bottom: 2px solid darkgreen;
+}
+
+.green-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 1rem;
+  border: 2px solid black;
+}
+.green-campus-card h3 {
+  font-size: clamp(0.85rem, 0.75rem + 0.5vw, 1.2rem);
+}
+.download-link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+.download-link a {
+  padding: 1rem 2rem;
+  background-color: rgb(185, 36, 36);
+  color: #ffff;
+  border-radius: 1rem;
+  font-size: clamp(0.7rem, 0.614rem + 0.429vw, 1rem);
+  border: 3px solid transparent;
+}
+
+.download-link a:hover {
+  background-color: rgb(105, 138, 39);
+  border: 3px solid red;
+}
+
+.green-culandcom {
+  padding: 2% 8%;
+}
+
+.green-culandcom h3 {
+  padding: 1rem;
+  background-color: rgb(79, 218, 79);
+  border-radius: 1rem;
+  border: 2px solid green;
+  font-size: clamp(0.7rem, 0.614rem + 0.429vw, 1rem);
+  line-height: 16px;
+}
+.green-habit h3 {
+  background-color: darkgray;
+}
+@media screen and (max-width: 600px) {
+  .green-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .green-campaign {
+    padding: 0;
+  }
+  .how-support {
+    padding: 0 3% !important;
+  }
+  .how-support img {
+    width: 100% !important;
+  }
+  .sembcorp-support-img {
+    padding: 0 !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+
+/* Supporter Sembcorp css */
+.sembcorp-intro {
+  padding: 5% 8% 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+.sembcorp-intro h1 {
+  font-size: clamp(1.3rem, 1.1rem + 1vw, 2rem);
+}
+.sembcorp-intro p,
+a {
+  font-size: clamp(0.8rem, 0.743rem + 0.286vw, 1rem);
+}
+.how-support {
+  padding: 0% 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-block: 2rem;
+}
+.how-support img {
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+  border-radius: 0.5rem;
+}
+.how-support h2 {
+  font-size: clamp(1rem, 0.914rem + 0.429vw, 1.3rem);
+  text-align: center;
+}
+.sembcorp-support-img {
+  padding: 0% 10%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.sembcorp-support-img img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.sembcorp-support {
+  padding: 1% 8% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.sembcorp-support h3 {
+  font-size: clamp(1rem, 0.914rem + 0.429vw, 1.3rem);
+}
+.sembcorp-support p {
+  font-size: clamp(0.8rem, 0.743rem + 0.286vw, 1rem);
+}
+
+.green-container a {
+  font-size: 1rem;
+}

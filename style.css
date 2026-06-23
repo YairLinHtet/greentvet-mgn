@@ -10,13 +10,16 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
   background: linear-gradient(#80cd8ed8, #45b449b1);
+  overflow: overlay;
 }
 
 main {
   flex-grow: 1;
   font-family: "Open Sans", pydaungsu, sans-serif;
-  color: green;
+  color: rgb(7, 75, 7);
   min-height: 100vh;
 }
 footer {
@@ -36,4 +39,26 @@ footer {
 
 p {
   line-height: 180%;
+}
+
+::-webkit-scrollbar {
+  background: rgb(224, 224, 109);
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(95, 205, 95);
+  border-radius: 100vw;
+  display: none;
+  transition: display 10000ms ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  display: block;
+  background: green;
+}
+::-webkit-scrollbar-track {
+  border-radius: 100vw;
+  margin-block: 0.5em;
+  background: transparent;
 }
