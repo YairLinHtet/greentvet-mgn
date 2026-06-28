@@ -37,11 +37,11 @@
   border-radius: 0.5rem;
 }
 .year-card h2 {
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 0.886rem + 0.571vw, 1.4rem);
   text-align: center;
 }
 .year-card p {
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 0.743rem + 0.286vw, 1rem);
   text-align: center;
 }
 .year-card a {
@@ -51,6 +51,7 @@
   font-size: 0.9rem;
   color: rgb(78, 64, 38);
   border: 2px solid rgba(57, 52, 52, 0.504);
+  font-size: clamp(0.7rem, 0.614rem + 0.429vw, 1rem);
 }
 .year-card a:hover {
   background-color: rgb(151, 239, 9);
@@ -103,7 +104,7 @@
   border-radius: 1rem;
   border: 2px solid black;
 }
-.green-campus-card h3 {
+.green-card h3 {
   font-size: clamp(0.85rem, 0.75rem + 0.5vw, 1.2rem);
 }
 .download-link {
@@ -118,7 +119,7 @@
   background-color: rgb(185, 36, 36);
   color: #ffff;
   border-radius: 1rem;
-  font-size: clamp(0.7rem, 0.614rem + 0.429vw, 1rem);
+  font-size: clamp(0.6rem, 0.486rem + 0.571vw, 1rem);
   border: 3px solid transparent;
 }
 
