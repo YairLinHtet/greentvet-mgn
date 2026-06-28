@@ -36,6 +36,14 @@
   aspect-ratio: 16/9;
   border-radius: 0.5rem;
 }
+.year-card h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.year-card p {
+  font-size: 1rem;
+  text-align: center;
+}
 .year-card a {
   padding: 0.5rem 1rem;
   background-color: rgb(94, 218, 17);
@@ -135,9 +143,6 @@
   background-color: darkgray;
 }
 @media screen and (max-width: 600px) {
-  .green-cards {
-    grid-template-columns: repeat(1, 1fr);
-  }
   .green-campaign {
     padding: 0;
   }
@@ -150,6 +155,11 @@
   .sembcorp-support-img {
     padding: 0 !important;
     grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .green-cards {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
