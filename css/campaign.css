@@ -82,6 +82,14 @@
   gap: 2rem;
   padding: 1rem;
 }
+.green-cards:has(> :only-child) {
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+.green-cards:has(> :only-child) .green-card {
+  max-width: 600px;
+  width: 100%;
+}
 .green-card {
   background-color: rgb(60, 191, 117);
   padding: 2rem;
